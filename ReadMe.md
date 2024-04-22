@@ -7,7 +7,7 @@ This document gives an overview of the cloud engineering second semester examina
 3. Create a bash-script file on the master server to automate and deploy configurations.
 4. Create playbook on the master server to automate process of deploying bash-script on the slave server. 
 ## Details
-1. Set up and configure Vagrant on master and slave
+1. Set up and configure Vagrant on master(192.168.33.10) and slave(192.168.33.20)
 2. Create bash-file to automate process of deploying Laravel application
 3. Install Apache, php modules and extensions, mysql server and git using ‘sudo’
 4. Set up MySQL Database
@@ -23,5 +23,6 @@ This document gives an overview of the cloud engineering second semester examina
 14. Add database.sqlite file for database and changing of ownership
 15. Navigate into laravel directory
 16. Migrate all files and dependencies and restart apache server to get the application spinning up
-17. Set up playbook on master server to deploy laravel app into slave server
-18. Run command `ansible-playbook -i hosts appbook.yml`
+17. Run command `./bashfile`
+18. Set up playbook on master server to deploy laravel app into slave server
+19. Run command `ansible-playbook -i hosts appbook.yml`
